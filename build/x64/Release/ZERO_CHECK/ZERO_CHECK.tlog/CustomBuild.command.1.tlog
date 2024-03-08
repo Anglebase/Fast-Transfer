@@ -1,0 +1,10 @@
+^E:\SOCKET\FASTTRANSMISSION\BUILD\CMAKEFILES\E9697677589BAE91C4829A79768FD7D3\GENERATE.STAMP.RULE
+setlocal
+C:\CMake\bin\cmake.exe -SE:/socket/FastTransmission -BE:/socket/FastTransmission/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/socket/FastTransmission/build/FastTransmission.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
